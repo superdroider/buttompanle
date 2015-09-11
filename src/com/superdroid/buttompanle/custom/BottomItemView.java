@@ -13,6 +13,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.widget.ImageView;
@@ -42,6 +43,18 @@ public class BottomItemView extends LinearLayout implements BGABadgeable {
 	 * TextView文字
 	 */
 	private String mText;
+	/**
+	 * 图片宽度
+	 */
+	private int imgWidth;
+	/**
+	 * 图片高度
+	 */
+	private int imgHeight;
+	/**
+	 * 图片和文字的距离
+	 */
+	private int imgTextMargin;
 
 	private ImageView mImageView;
 	private TextView mTextView;
@@ -63,6 +76,15 @@ public class BottomItemView extends LinearLayout implements BGABadgeable {
 			case R.styleable.BottomItemView_mText:
 				mText = mTypedArray.getString(attr);
 				break;
+			case R.styleable.BottomItemView_mImgHeight:
+				imgHeight = mTypedArray.getDimensionPixelSize(attr, dip2px(25));
+				break;
+			case R.styleable.BottomItemView_mImgWidth:
+				imgWidth = mTypedArray.getDimensionPixelSize(attr, dip2px(25));
+				break;
+			case R.styleable.BottomItemView_mImgTextMargin:
+				imgTextMargin = mTypedArray.getDimensionPixelSize(attr, dip2px(2));
+				break;
 			}
 		}
 
@@ -76,22 +98,24 @@ public class BottomItemView extends LinearLayout implements BGABadgeable {
 		setPadding(0, dip2px(2), 0, 0);
 		LinearLayout.LayoutParams mImageViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT,
 				LayoutParams.WRAP_CONTENT);
-
-		LinearLayout.LayoutParams mTextViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT,
-				LayoutParams.WRAP_CONTENT);
-
 		mImageViewParams.gravity = Gravity.CENTER_HORIZONTAL;
 		mImageView = new ImageView(getContext());
 		mImageView.setImageDrawable(imgDrawable);
-		mImageView.setMinimumWidth(dip2px(40));
-		mImageView.setMinimumHeight(dip2px(40));
-		mImageViewParams.width = dip2px(25);
-		mImageViewParams.height = dip2px(25);
+		Log.i("tag", "imgWidth=" + imgWidth);
+		Log.i("tag", "imgHeight=" + imgHeight);
+		Log.i("tag", "imgTextMargin=" + imgTextMargin);
+		Log.i("tag", "dip2px(25)=" + dip2px(25));
+		mImageViewParams.width = imgWidth == 0 ? dip2px(25) : imgWidth;
+		mImageViewParams.height = imgHeight == 0 ? dip2px(25) : imgHeight;
+		mImageViewParams.bottomMargin = imgTextMargin == 0 ? dip2px(2) : imgTextMargin;
 
+		LinearLayout.LayoutParams mTextViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT,
+				LayoutParams.WRAP_CONTENT);
 		mTextViewParams.gravity = Gravity.CENTER_HORIZONTAL;
 		mTextView = new TextView(getContext());
 		mTextView.setTextColor(mTextColor);
 		mTextView.setText(mText);
+
 		this.addView(mImageView, mImageViewParams);
 		this.addView(mTextView, mTextViewParams);
 	}

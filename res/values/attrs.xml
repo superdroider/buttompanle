@@ -5,6 +5,9 @@
         <attr name="mText" format="reference|string" />
         <attr name="mTextColor" format="reference|color" />
         <attr name="mImgResource" format="reference|color" />
+        <attr name="mImgHeight" format="reference|dimension" />
+        <attr name="mImgWidth" format="reference|dimension" />
+        <attr name="mImgTextMargin" format="reference|dimension" />
     </declare-styleable>
     
     <declare-styleable name="BGABadgeView">

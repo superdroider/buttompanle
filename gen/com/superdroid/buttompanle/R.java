@@ -15,7 +15,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int badge_bgColor=0x7f010003;
+        public static final int badge_bgColor=0x7f010006;
         /**  是否可以拖拽删除徽章 
          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -24,7 +24,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int badge_dragable=0x7f01000a;
+        public static final int badge_dragable=0x7f01000d;
         /**  徽章在宿主控件中的位置 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -37,7 +37,7 @@ containing a value of this type.
 <tr><td><code>rightBottom</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int badge_gravity=0x7f010009;
+        public static final int badge_gravity=0x7f01000c;
         /**  徽章背景与宿主控件左右边缘间距离 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -45,7 +45,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int badge_horizontalMargin=0x7f010007;
+        public static final int badge_horizontalMargin=0x7f01000a;
         /**  徽章文本边缘与徽章背景边缘间的距离 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -53,14 +53,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int badge_padding=0x7f010008;
+        public static final int badge_padding=0x7f01000b;
         /**  徽章文本的颜色 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int badge_textColor=0x7f010004;
+        public static final int badge_textColor=0x7f010007;
         /**  徽章文本字体大小 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -68,7 +68,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int badge_textSize=0x7f010005;
+        public static final int badge_textSize=0x7f010008;
         /**  徽章背景与宿主控件上下边缘间距离 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -76,13 +76,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
          */
-        public static final int badge_verticalMargin=0x7f010006;
+        public static final int badge_verticalMargin=0x7f010009;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int mImgHeight=0x7f010003;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int mImgResource=0x7f010002;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int mImgTextMargin=0x7f010005;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int mImgWidth=0x7f010004;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -212,8 +230,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #BGABadgeView_badge_verticalMargin
          */
         public static final int[] BGABadgeView = {
-            0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006,
-            0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a
+            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
+            0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d
         };
         /**
           <p>
@@ -345,17 +363,36 @@ in (inches), mm (millimeters).
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #BottomItemView_mImgHeight com.superdroid.buttompanle:mImgHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #BottomItemView_mImgResource com.superdroid.buttompanle:mImgResource}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomItemView_mImgTextMargin com.superdroid.buttompanle:mImgTextMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomItemView_mImgWidth com.superdroid.buttompanle:mImgWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #BottomItemView_mText com.superdroid.buttompanle:mText}</code></td><td></td></tr>
            <tr><td><code>{@link #BottomItemView_mTextColor com.superdroid.buttompanle:mTextColor}</code></td><td></td></tr>
            </table>
+           @see #BottomItemView_mImgHeight
            @see #BottomItemView_mImgResource
+           @see #BottomItemView_mImgTextMargin
+           @see #BottomItemView_mImgWidth
            @see #BottomItemView_mText
            @see #BottomItemView_mTextColor
          */
         public static final int[] BottomItemView = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005
         };
+        /**
+          <p>This symbol is the offset where the {@link com.superdroid.buttompanle.R.attr#mImgHeight}
+          attribute's value can be found in the {@link #BottomItemView} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.superdroid.buttompanle:mImgHeight
+        */
+        public static final int BottomItemView_mImgHeight = 3;
         /**
           <p>This symbol is the offset where the {@link com.superdroid.buttompanle.R.attr#mImgResource}
           attribute's value can be found in the {@link #BottomItemView} array.
@@ -368,6 +405,30 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.superdroid.buttompanle:mImgResource
         */
         public static final int BottomItemView_mImgResource = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.superdroid.buttompanle.R.attr#mImgTextMargin}
+          attribute's value can be found in the {@link #BottomItemView} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.superdroid.buttompanle:mImgTextMargin
+        */
+        public static final int BottomItemView_mImgTextMargin = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.superdroid.buttompanle.R.attr#mImgWidth}
+          attribute's value can be found in the {@link #BottomItemView} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.superdroid.buttompanle:mImgWidth
+        */
+        public static final int BottomItemView_mImgWidth = 4;
         /**
           <p>This symbol is the offset where the {@link com.superdroid.buttompanle.R.attr#mText}
           attribute's value can be found in the {@link #BottomItemView} array.
