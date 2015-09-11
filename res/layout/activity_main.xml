@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mbottom="http://schemas.android.com/apk/res/com.superdroid.buttompanle"
+    xmlns:badge="http://schemas.android.com/apk/res/com.superdroid.buttompanle"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.superdroid.buttompanle.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/frag_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_bottom_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+
+        <com.superdroid.buttompanle.custom.BottomItemView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            badge:badge_horizontalMargin="25dp"
+            mbottom:mImgResource="@drawable/selector_bottom_image_home"
+            mbottom:mText="首页"
+            mbottom:mTextColor="@drawable/selector_bottom_text_color" />
+
+        <com.superdroid.buttompanle.custom.BottomItemView
+            android:id="@+id/around"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            badge:badge_horizontalMargin="20dp"
+            mbottom:mImgResource="@drawable/selector_bottom_image_around"
+            mbottom:mText="周边"
+            mbottom:mTextColor="@drawable/selector_bottom_text_color" />
+
+        <com.superdroid.buttompanle.custom.BottomItemView
+            android:id="@+id/mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            badge:badge_horizontalMargin="27dp"
+            badge:badge_verticalMargin="0dp"
+            mbottom:mImgResource="@drawable/selector_bottom_image_mine"
+            mbottom:mText="我的"
+            mbottom:mTextColor="@drawable/selector_bottom_text_color" />
+
+        <com.superdroid.buttompanle.custom.BottomItemView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            badge:badge_horizontalMargin="10dp"
+            mbottom:mImgResource="@drawable/selector_bottom_image_more"
+            mbottom:mText="更多"
+            mbottom:mTextColor="@drawable/selector_bottom_text_color" />
+    </LinearLayout>
+
+</RelativeLayout>
